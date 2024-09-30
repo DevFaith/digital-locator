@@ -8,23 +8,23 @@ const Header = () => {
 
   return (
     <>
-      <div className='w-full relative h-16 bg-red-400 border-b border-red-200 px-5 flex justify-between items-center'>
+      <div className='w-full relative h-16 bg-gray-400 border-b border-red-200 px-5 flex justify-between items-center'>
         <div className='flex justify-start gap-20 items-center'>
-          <h1 className='text-5xl text-white-400 '>Medi Locator</h1>
+          <h1 className='text-3xl text-white-400 '>Medi Locator</h1>
         </div>
         <div className='hidden md:flex justify-center items-center'>
           <ul className='flex gap-8 text-white text-2xl'>
             <li>
-              <Link to='/' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg">Home</Link>
+              <Link to='/' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg">Home</Link>
             </li>
             <li>
-              <Link to='/about us' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg">About us</Link>
+              <Link to='/about' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg">About</Link>
             </li>
             <li>
-              <Link to='/how we work' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg">How we work</Link>
+              <Link to='/work' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg">Work</Link>
             </li>
             <li>
-              <Link to='/contact us' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg">Contact us</Link>
+              <Link to='/contact' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg">Contact</Link>
             </li>
           </ul>
         </div>
@@ -43,19 +43,19 @@ const Header = () => {
         </div>
       </div>
       {dropdown && (
-        <div className='w-full bg-red-400 flex flex-col items-center md:hidden'>
+        <div className='w-full bg-gray-400 flex flex-col items-center md:hidden'>
           <ul className='flex flex-col gap-4 text-white text-2xl'>
             <li>
-              <Link to='/' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>Home</Link>
+              <Link to='/' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>Home</Link>
             </li>
             <li>
-              <Link to='/about us' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>About us</Link>
+              <Link to='/about' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>About</Link>
             </li>
             <li>
-              <Link to='/how we work' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>How we work</Link>
+              <Link to='/Work' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>Work</Link>
             </li>
             <li>
-              <Link to='/contact us' className="hover:text-red-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>Contact us</Link>
+              <Link to='/contact' className="hover:text-gray-500 hover:bg-gray-200 px-4 py-2 rounded-lg" onClick={() => setDropdown(false)}>Contact</Link>
             </li>
           </ul>
         </div>
